@@ -1,0 +1,170 @@
+nav{
+    color: $blanco;
+    font-weight: 400;
+    display: inline-flex;
+    text-decoration: none;
+    color: $blanco;
+}
+
+.menu{
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    }
+    
+.menu li {
+    margin: 0 15px;
+    float: left;
+    border: 1px solid transparent;
+    
+}
+    
+// .menu li:last-child {
+//         border-right: none;
+    // }
+    
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    color: $blanco;
+    text-align: center;
+    padding: 6px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    }
+
+.menu li a:hover {
+    background-color: #555;
+    }
+
+
+.menu-toggle {
+    display: none;
+    }
+
+
+
+// .menu li a:hover:not(.active) {
+//         background-color: #111;
+//         color: #fff;
+}
+    
+.Destacado {
+    background-color: $color-principal;
+    color: $color-secundario;
+    text-decoration: none;
+    }
+
+.Botoncito {
+    background-color: $color-secundario;
+    color: $blanco;
+    text-decoration: none;
+    }
+
+
+@media (max-width: 767px) {
+    /* Ocultar los elementos del menú por defecto */
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    /* Mostrar el menú cuando el checkbox esté marcado */
+    .menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+
+    /* Estilos para el botón de hamburguesa */
+    .menu-icon {
+        display: block;
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        border: none;
+    }
+
+    .menu-icon:hover {
+        background-color: #555;
+    }
+
+    /* Estilos de los elementos del menú en móviles */
+    .menu li {
+        margin: 10px;
+
+
+    }
+
+    .menu li a {
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Menú en pantallas entre 768px y 1024px (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu-toggle{
+        display: none;
+    }
+
+    .menu li {
+        margin: 0 10px;
+    }
+
+    .menu li a {
+        padding: 8px 12px;
+    }
+
+    /* Ocultar el botón de hamburguesa en tablets */
+    .menu-icon {
+        display: none;
+    }
+}
+
+/* Menú en pantallas grandes (escritorios) */
+@media (min-width: 1024px) {
+    .menu {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .menu li {
+        margin: 0 20px;
+    }
+
+    .menu li a {
+        padding: 10px 20px;
+    }
+
+    /* Ocultar el botón de hamburguesa en escritorios */
+    .menu-icon {
+        display: none;
+    }
+    .menu-toggle{
+        display: none;
+    }
+}
+

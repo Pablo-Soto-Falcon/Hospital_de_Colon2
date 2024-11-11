@@ -1,0 +1,314 @@
+@charset "UTF-8";
+h1 {
+  color: #074772;
+  font-family: "Didot", sans-serif;
+}
+
+h2 {
+  size: small;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la pantalla */
+  margin: 0; /* Eliminar márgenes por defecto */
+}
+
+/* Hacer que el contenido principal ocupe el espacio disponible */
+.container.Set {
+  flex: 1; /* El contenido de la página debe ocupar el espacio disponible */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: #074772;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+.logo-nombre {
+  vertical-align: auto;
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+}
+
+.nav-link {
+  list-style: none;
+  display: list-item;
+  margin: 0;
+  padding: 0;
+}
+
+.reservar {
+  display: flex;
+  background-color: #afd896;
+  color: #111111;
+}
+
+@media (max-width: 767px) {
+  .logo-nombre {
+    display: none;
+  }
+}
+nav {
+  color: #fff;
+  font-weight: 400;
+  display: inline-flex;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+.menu .menu li {
+  margin: 0 15px;
+  float: left;
+  border: 1px solid transparent;
+}
+.menu .menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 6px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.menu .menu li a:hover {
+  background-color: #555;
+}
+.menu .menu-toggle {
+  display: none;
+}
+
+.Destacado {
+  background-color: #afd896;
+  color: #074772;
+  text-decoration: none;
+}
+
+.Botoncito {
+  background-color: #074772;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  /* Ocultar los elementos del menú por defecto */
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    text-decoration: none;
+  }
+  /* Mostrar el menú cuando el checkbox esté marcado */
+  .menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+  /* Estilos para el botón de hamburguesa */
+  .menu-icon {
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    border: none;
+  }
+  .menu-icon:hover {
+    background-color: #555;
+  }
+  /* Estilos de los elementos del menú en móviles */
+  .menu li {
+    margin: 10px;
+  }
+  .menu li a {
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+  }
+}
+/* Menú en pantallas entre 768px y 1024px (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .menu li {
+    margin: 0 10px;
+  }
+  .menu li a {
+    padding: 8px 12px;
+  }
+  /* Ocultar el botón de hamburguesa en tablets */
+  .menu-icon {
+    display: none;
+  }
+}
+/* Menú en pantallas grandes (escritorios) */
+@media (min-width: 1024px) {
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .menu li {
+    margin: 0 20px;
+  }
+  .menu li a {
+    padding: 10px 20px;
+  }
+  /* Ocultar el botón de hamburguesa en escritorios */
+  .menu-icon {
+    display: none;
+  }
+  .menu-toggle {
+    display: none;
+  }
+}
+footer {
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #074772;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: auto;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #afd896;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-column a:hover {
+  color: #afd896;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #afd896;
+}
+
+@media (max-width: 767px) {
+  .footer-column {
+    font-size: 10px;
+  }
+}
+.services-container {
+  display: flex;
+  justify-content: space-around; /* Espacio entre los servicios */
+  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si es necesario */
+  padding: 20px;
+  max-width: 1200px; /* Máximo ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+.service {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+}
+
+.service img {
+  max-width: 100%;
+  height: 160px;
+  border-radius: 10px;
+}
+
+.service h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.service p {
+  color: #666;
+}
+
+.Set {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex: 1;
+}
+
+.Titulo1 {
+  margin-top: 25px;
+  color: #afd896;
+}
+
+.cuerpo-lleno {
+  display: flex;
+}/*# sourceMappingURL=main.css.map */
