@@ -1,16 +1,16 @@
 .contact-form {
     justify-items: center;
-    background-color: $blanco;
+    background-color: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: $gris;
+    box-shadow: #ccc;
     max-width: 400px;
     width: 100%;
 }
 
 .contact-form h2 {
     text-align: center;
-    color: $negro;
+    color: black;
     margin-bottom: 20px;
 }
 
@@ -18,7 +18,7 @@
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: $negro;
+    color: black;
 }
 
 .contact-form input,
@@ -39,8 +39,8 @@
 }
 
 .contact-form input[type="submit"] {
-    background-color: $color-terciario;
-    color: $blanco;
+    background-color: lightseagreen;
+    color: white;
     border: none;
     padding: 12px;
     font-size: 16px;
@@ -51,5 +51,5 @@
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: $color-principal;
+    background-color: gray;
 }
