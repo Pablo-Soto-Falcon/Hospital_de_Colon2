@@ -42,8 +42,13 @@ header{
 
 @media (max-width: 767px) {
     .logo-nombre{
-        display: none;
+        font-size: 16px;
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logo-nombre{
+        font-size: 20px;
+    }
+}
 

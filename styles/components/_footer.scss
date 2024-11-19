@@ -14,7 +14,6 @@ footer {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    
 }
 
 .footer-column {
@@ -57,10 +56,17 @@ footer {
 }
 
 @media(max-width: 767px){
+    .footer{
+        padding:0;
+    }
     .footer-column{
         font-size: 10px;
-    
     }
-}
 
-
+    .social-icons a {
+        color: $blanco;
+        font-size: 14px;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+}   
